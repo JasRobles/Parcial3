@@ -17,42 +17,40 @@
 
 </head>
 <body>
+<script type="text/javascript">
+	$(document).ready(function () {
+				$.post('ControllerUsuario', {
+					//Envio de datos a js
+				}, function (response) {
+					let datos = JSON.parse(response);
 
-	<script type="text/javascript">
-	
-	function cargardatos() {
+					console.log(datos);
 
-		$(document).ready(function () {
-
-
-			$.post('controllerUsuario', function (datos) {
-				try {
 					var tabla = document.getElementById('tablaDatos');
-					$('#tablaDatos tbody tr').remove();
-					datos.forEach(function (item) {
-						tabla.innerHTML += `
-								<td> ${item.Id} </td>
-							    <td >  ${item.Nombre} </td>
-							   <td> ${item.Apellido}</td>
-							   <td>
-								<a class="btn btn-danger" href="controllerUsuario?id=${item.Id}&Eliminar=btne"> ELIMINAR </a> 
-								</td>
-								</tr>
+					for (let item of datos) {
+						tabla.innerHTML +=
 							`
-
-					})
-					
-				} catch (e) {
-					// TODO: handle exception
-				}
-				
+					<tr>
+						<td>${item.Id}</td>
+						<td>${item.Nombre}</td>
+						<td>${item.Apellido}</td>
+						<td><a href="ControllerUsuario?Id=${item.Id}&Eliminar=btne" class="btn btn-danger">Eliminar</a>
+						</td>
+					</tr>
+					`
+						console.log(item.Pass);
+					}
+				});
 			});
-		})
-
-
-	}
+		</script>
 			
-
+<form action="ControllerAcceso" method="post">
+		<input type="submit" name="btncerrar" value="Cerrar sesion">
+		<br>
+		<br>
+		<input type="submit" name="btniniciar" value="Iniciar sesion">
+	</form>
+	<br>
 <div class="tabla" id="tabladiv">
 			<table id="tablaDatos" class="table table-sm table-dark">
 				<thead >
