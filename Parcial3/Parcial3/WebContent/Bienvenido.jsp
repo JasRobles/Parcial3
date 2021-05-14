@@ -20,7 +20,7 @@
 <script type="text/javascript">
 	$(document).ready(function () {
 				$.post('ControllerUsuario', {
-					//Envio de datos a js
+					
 				}, function (response) {
 					let datos = JSON.parse(response);
 
