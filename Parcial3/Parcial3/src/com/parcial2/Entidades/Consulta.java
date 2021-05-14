@@ -1,10 +1,11 @@
-package com.parcial3.Entidades;
+package com.parcial2.Entidades;
 
-public class usuario {
-	
+public class Consulta {
+
 	private int Id;
     private String Nombre;
-    private String Contrasena;
+    private String Apellido;
+    
 	public int getId() {
 		return Id;
 	}
@@ -17,12 +18,11 @@ public class usuario {
 	public void setNombre(String nombre) {
 		Nombre = nombre;
 	}
-	public String getContrasena() {
-		return Contrasena;
+	public String getApellido() {
+		return Apellido;
 	}
-	public void setContrasena(String contrasena) {
-		Contrasena = contrasena;
+	public void setApellido(String apellido) {
+		Apellido = apellido;
 	}
-
     
 }

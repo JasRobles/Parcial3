@@ -1,11 +1,12 @@
-package com.parcial3.DAO;
+package com.parcial2.DAO;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import com.parcial3.Entidades.*;
-import com.parcial3.ConexionBd.ConexionBd;
+
+import com.parcial2.ConexionBd.ConexionBd;
+import com.parcial2.Entidades.*;
 
 
 public class Usuario {

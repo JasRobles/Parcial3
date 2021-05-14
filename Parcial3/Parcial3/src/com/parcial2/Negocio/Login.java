@@ -1,7 +1,7 @@
-package com.parcial3.Negocio;
+package com.parcial2.Negocio;
 
-import com.parcial3.DAO.ClsLoguin;
-import com.parcial3.Entidades.usuario;
+import com.parcial2.DAO.ClsLoguin;
+import com.parcial2.Entidades.usuario;
 
 public class Login {
 	

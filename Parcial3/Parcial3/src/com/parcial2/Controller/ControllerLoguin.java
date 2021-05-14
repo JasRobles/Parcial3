@@ -1,4 +1,4 @@
-package com.parcial3.Controller;
+package com.parcial2.Controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
-import com.parcial3.DAO.Usuario;
-import com.parcial3.Entidades.usuario;
-import com.parcial3.Negocio.Login;
+import com.parcial2.DAO.Usuario;
+import com.parcial2.Entidades.usuario;
+import com.parcial2.Negocio.Login;
 
 
 

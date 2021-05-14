@@ -1,4 +1,4 @@
-package com.parcial3.ConexionBd;
+package com.parcial2.ConexionBd;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
